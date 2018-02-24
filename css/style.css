@@ -765,10 +765,8 @@ pre .javascript .function {
 #main-projects .card-title {
   color: #00c853;
 }
-#main-container {
-  margin-top: -80px;
-}
 #main-container .bg-image {
+  margin-top: -80px;
   height: 582px;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
