@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  
+  <title>关于集装箱限重的一些问题汇总 | 创诚易达</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="集装箱作为一种标准运输工具，关于箱体本身的限重，每个集装箱箱体上都有最大限重的信息：MAX GROSS :30480KGS。意思就是说你的箱子连箱带货不能超过这个重量。皮重–20GP:为2200KGS,40为:3.720-4200KGS，个别有的HQ会有 MAX GROSS: 32000KGS。 这是集装箱箱体能够承受的最大强度，装货超过此限，可能发生箱体变型，底板脱落，顶梁弯折等损坏，由此产生的">
+<meta name="keywords" content="珠海创诚易达信息科技有限公司, ERP, TMS, WMS, OMS, 物流软件, 物流系统, APP, 小程序">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于集装箱限重的一些问题汇总">
+<meta property="og:url" content="http://www.eeda123.com/blog/eeda_container_qa/index.html">
+<meta property="og:site_name" content="创诚易达">
+<meta property="og:description" content="集装箱作为一种标准运输工具，关于箱体本身的限重，每个集装箱箱体上都有最大限重的信息：MAX GROSS :30480KGS。意思就是说你的箱子连箱带货不能超过这个重量。皮重–20GP:为2200KGS,40为:3.720-4200KGS，个别有的HQ会有 MAX GROSS: 32000KGS。 这是集装箱箱体能够承受的最大强度，装货超过此限，可能发生箱体变型，底板脱落，顶梁弯折等损坏，由此产生的">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://album.sina.com.cn/pic/006QTEJ3zy7bZyr3pJX9d">
+<meta property="og:updated_time" content="2018-03-16T01:34:10.806Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="关于集装箱限重的一些问题汇总">
+<meta name="twitter:description" content="集装箱作为一种标准运输工具，关于箱体本身的限重，每个集装箱箱体上都有最大限重的信息：MAX GROSS :30480KGS。意思就是说你的箱子连箱带货不能超过这个重量。皮重–20GP:为2200KGS,40为:3.720-4200KGS，个别有的HQ会有 MAX GROSS: 32000KGS。 这是集装箱箱体能够承受的最大强度，装货超过此限，可能发生箱体变型，底板脱落，顶梁弯折等损坏，由此产生的">
+<meta name="twitter:image" content="http://album.sina.com.cn/pic/006QTEJ3zy7bZyr3pJX9d">
+
+  
+    <link rel="alternate" href="/atom.xml" title="创诚易达" type="application/atom+xml" />
+  
+
+  
+  <!--[if lte IE 10 ]><link rel="shortcut icon" href="/images/favicon.ico"><![endif]-->
+  <!--[if !IE]><!-->
+  <link rel="shortcut icon" href="/images/favicon.png">
+  <meta name="baidu-site-verification" content="CxIphFvq1I" />
+  <meta name="msapplication-TileImage" content="/images/favicon.png"/>
+  <meta name="msapplication-TileColor" content="#000000"/>
+
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-144x144.png" />
+
+  <link rel="icon" sizes="256x256" href="/images/favicon.png" />
+  <!--<![endif]-->
+  
+
+  <link href="//fonts.cat.net/css?family=Source+Code+Pro|Material+Icons|Raleway:400,300,700" rel="stylesheet" type="text/css" />
+  <!--<![endif]-->
+  <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+  <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/vendors.css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+
+  <script src="/js/vendors.js"></script>
+
+  <script>
+    define('jquery', function () {
+      return window.jQuery;
+    });
+  </script>
+  
+
+</head>
+<body>
+
+  <div class="navbar-fixed">
+  <nav id="main-navbar" class="grey lighten-5 z-depth-0" role="navigation">
+    <div class="nav-wrapper container">
+
+      <a id="logo-container" href="/" class="brand-logo center-align">
+        <span>创诚易达</span>
+        <sub></sub>
+      </a>
+
+      <ul class="right hide-on-med-and-down">
+        
+          <li>
+            <a class="main-nav-link" href="/">首页</a>
+          </li>
+        
+          <li>
+            <a class="main-nav-link" href="/blog">新闻中心</a>
+          </li>
+        
+          <li>
+            <a class="main-nav-link" href="/about">关于我们</a>
+          </li>
+        
+      </ul>
+
+      <a href="#" data-activates="nav-mobile" class="button-collapse">
+        <i class="material-icons">menu</i>
+      </a>
+    </div>
+  </nav>
+</div>
+
+<ul id="nav-mobile" class="side-nav">
+  
+  <li>
+    <a class="main-nav-link" href="/">首页</a>
+  </li>
+  
+  <li>
+    <a class="main-nav-link" href="/blog">新闻中心</a>
+  </li>
+  
+  <li>
+    <a class="main-nav-link" href="/about">关于我们</a>
+  </li>
+  
+</ul>
+
+
+  <div id="main-container">
+    
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+
+
+      <article id="post-eeda_container_qa" class="article article-type-post" itemscope itemprop="blogPost">
+
+        <div class="article-inner">
+          
+
+          <header class="article-header">
+          
+              
+  
+    <h1 class="article-title header" itemprop="name">
+      关于集装箱限重的一些问题汇总
+    </h1>
+  
+
+
+          
+
+            <div class="article-meta">
+              <i class="fa fa-calendar"></i>
+              <time datetime="2018-03-16T01:31:00.000Z" itemprop="datePublished">Mar 16, 2018</time>
+            </div>
+          </header>
+
+
+          <div class="article-entry " itemprop="articleBody">
+            
+              <p>集装箱作为一种标准运输工具，关于箱体本身的限重，每个集装箱箱体上都有最大限重的信息：MAX GROSS :30480KGS。意思就是说你的箱子连箱带货不能超过这个重量。皮重–20GP:为2200KGS,40为:3.720-4200KGS，个别有的HQ会有 MAX GROSS: 32000KGS。</p>
+<p>这是集装箱箱体能够承受的最大强度，装货超过此限，可能发生箱体变型，底板脱落，顶梁弯折等损坏，由此产生的假如货物确实超重又不能分割，那么可以选择超重箱。这里会添加是选重费，通常码头或堆场将船公司的普通干箱堆码在一起，假如要选择其中特别的加重柜（如前面谈到的20‘加重柜），码头或堆场必须逐个查找，由此产生的选柜费一般跟指定柜费同价。</p>
+<p>一切损失将由装货人全部承担。目前国内大多数专业集装箱码头都安装了自动地磅，只要集装箱装货超出箱体限重的，码头是一律拒绝收柜的。所以建议各位装箱前，看清楚集装箱箱体上的限重，以避免发生不必要的返箱重装作业。</p>
+<p><img src="http://album.sina.com.cn/pic/006QTEJ3zy7bZyr3pJX9d" alt="image"></p>
+<p><strong>船公司限重：</strong></p>
+<p>通常情况下每个船公司重量政策都不同，大概标准就是不以损坏集装箱为标准。</p>
+<p>处于舱位与重量的平衡考虑。每条集装箱船都有一定的舱位和重量限制，但具体在某条航线上，舱位和重量并不是刚刚好平衡用完的。问题往往发生在出重货比较集中的华北地区，船舶的重量已经到了，舱位还少许多，为了弥补这种舱位损失，船公司往往采取加价策略，即货重超过多少吨后加收额外的运费。也有船公司不是用自个船，而是买其他船公司的舱位来运输的，对重量的限制会更加严格，因为船公司之间的舱位买卖一都是按照1TEU=14TONS或者16TONS的标准来计算的，超过重量的不给上船。</p>
+<p>在爆舱期间，根据航线热度不同，船公司对每个箱型的限重都会相应下调。</p>
+<p>订舱时，最晚出货时就要向货代询问关于船公司的限重问题。假如没有确认而货物又是重货的话就有风险，有些船公司超重后，不会有任何沟通余地，直接让发货人拖货、出港和掏货然后重新过磅。</p>
+<p><strong>港区限重：</strong></p>
+<p>主要看码头和堆场的机械设备负荷。</p>
+<p>集装箱船靠码头后，通常都需要码头的吊机进行装卸作业，然后用卡车拖到集装箱堆场再用叉车吊下来。假如集装箱的重量超过机械负荷，就会给码头和堆场的作业造成困难。所以，对一些设备比较落后的小港口，船公司通常会提前告知该港口的限重，超过此限的不收。</p>
+<p><strong>配套的支线船或公路限重：</strong></p>
+<p>做过美国内陆点的人都深有体会，美国的公路运输限重十分严格，由于许多集装箱在码头卸下后需要用集卡走公路拖到内陆的，所以公路限重同样成为船公司限制集装箱重量的因素。当然，只做到码头的不在此限。</p>
+<p>到美国线的货物对重量的要求非常严格，限重主要是受到到美国内陆点公路限重的影响，通常小柜17.3吨，大高柜19.5吨。可是根据不同的港口也有不同的限重要求。</p>
+<p><strong>航线限重：</strong></p>
+<p>不同航线，船公司运力是按照货物装卸港挂靠顺序和货物出口种类和热度不同来安排的，加之目的港设备操作的负荷问题，不同航线大小柜的限重也有不同。</p>
+<p><strong>超重了怎么办?</strong></p>
+<p>这主要分船公司超重、港区超重、目的港超重:</p>
+<ol>
+<li>船公司超重。与船东商量，补交超重费，其他按正常走；</li>
+<li>港区有自行规定的超重。假如在进港时发现超重,需和港区交涉,补交超重费加人工搞定费或者掏箱重装；</li>
+<li>目的港超重。通常目的港超重后在一定范围内，交罚金能够解决；假如超重严重，沿途吊机无法负荷只能在附近的港口调卸或者原路返回。</li>
+</ol>
+<h4 id="新政策及影响"><a href="#新政策及影响" class="headerlink" title="新政策及影响"></a><strong>新政策及影响</strong></h4><p>从2016年7月1日开始，国际海事组织(IMO)将实施《国际海上人命安全公约》(SOLAS公约)关于出口集装箱重量查核的相关要求，该规定明确要求，从当天起，托运人(货主)将要为所有出口集装箱申报查核总重量(VGM)，凡无验证总重的集装箱将不得装船。以下五点行业内需知的重要事项予以概述。</p>
+<p><strong>新规定将提高航运安全性</strong></p>
+<p>新规定将提高航运安全性.误报的集装箱重量对船舶、卡车和码头设备的稳性具有严重影响，并且对该行业中的工人安全构成威胁，甚至危及生命。误报重量似乎是普遍现象，当集装箱在事故后称重时，所获总量结果经常与其货物舱单上数据不同。就该问题的长期争议已导致对SOLAS公约(有关其第VI章第2条，要求使之准确)的修订，以确保所有集装箱重量精确申报。</p>
+<p><strong>所有集装箱应予称重</strong></p>
+<p>新SOLAS公约规定的原则是简单的，自2016年7月1日起，所有集装箱在其装船前要强制性称重。集装箱重量可用两种方法之一来确定。集装箱可在其已装货后称重，或可代之以将货箱的所有内容物品称重，并且该重量可加上集装箱皮重合并计算。无论以何种方式，对其重量不允许主观推算。</p>
+<p><strong>整个供应链将受到影响</strong></p>
+<p>积极参与集装箱供应链的各个方面将在某种程度上受到此新规定影响。船舶经营人和码头经营人被要求将经验证的集装箱重量运用于配载计划。为了让他们以及时方式得到信息，托运人将必须与订舱代理或货运代理分享该验证重量。这显然要求达成有关程序新协议，以及修改现有的信息技术(IT)系统。</p>
+<p><strong>提供准确重量为托运人责任</strong></p>
+<p>托运人(或托运人责任下的第三方)被要求对装货的集装箱或其全部内容称重，这取决于其所选方法。所用的称重设备必须满足国家的认证和校准要求。SOLAS公约修正案要求重量验证程序必须签名，特定人员必须按代表托运人已验证重量计算精度程序来命名和确定。承运人可依赖此签名验证重量作为准确重量。</p>
+<p><strong>申报程序细节可因具体情况不同而异</strong></p>
+<p>集装箱验证总重量必须以签名的航运文件申报。此单证可能是给航运公司装船指令的一部分，或可为单独文件，如像一份包含重量证书的申报单。无论何种情况，该文件应明确申明所提供的总重量为验证的总重量。承运人将提供托运人有关信息截止时间，在此期限内承运人必须从托运人那里收到要求的集装箱验证重量用于船舶配载计划。这些截止时间可因不同的承运人而异，可因运作程序或不同的码头经营人的要求而异，并可因港口不同而异。凡无验证总重的集装箱不得装船。</p>
+
+            
+          </div>
+
+          
+
+          <footer class="article-footer">
+            <!--a data-url="http://www.eeda123.com/blog/eeda_container_qa/" data-id="cjet9tkrw0002msj9c3aa21mi" class="article-share-link">Share</a-->
+            
+            
+          </footer>
+
+        </div>
+
+        
+          
+<nav id="article-nav" class="white">
+  <div class="nav-wrapper">
+    <ul class="row">
+    
+
+    
+      <li class="col s6">
+        <a href="/blog/eeda_transportation_mode/" id="article-nav-older" class="article-nav-link-wrap grey-text text-darken-1 right-align truncate">
+          <span class="article-nav-title">海运集装箱运输方式有哪几种？</span>
+          <i class="fa fa-arrow-right"></i>
+        </a>
+      </li>
+    
+
+    </ul>
+  </div>
+</nav>
+
+
+        
+      </article>
+
+
+      
+
+
+
+    </div>
+  </div>
+</div>
+
+
+  
+
+
+
+  </div>
+
+  <footer class="page-footer grey darken-2">
+    <div class="footer-copyright">
+      <div class="container">
+          <p>珠海公司：珠海市中珠水晶堡商业广场622号 <span style="margin-left: 140px;">咨询电话：0756-2160009</span></p>
+          <p>深圳公司：深圳市罗湖区清水河一路北腾邦大厦A座4楼118  <span style="margin-left: 30px;"></span>咨询电话：0755-82339386</span></p>
+        &copy; 2013 - 2018 珠海创诚易达信息科技有限公司
+
+        <div class="right">
+          <a href="http://www.miitbeian.gov.cn/" rel="nofollow" class="white-text" target="_blank">粤ICP备13063121号</a>
+          <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_5655076'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D5655076%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/app.js"></script>
+
+</body>
+</html>
