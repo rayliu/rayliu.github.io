@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  
+  <title>优化库存管理问题的经验分享 | 创诚易达</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta name="description" content="如何优化库存管理的问题？如果掌握不好，首先是影响销售；接着是影响进货,不利资金周转！创诚易达的小编告诉我们不仅仅要把着力点放在解决问题上，而忽略了一个关键点——如何查找导致库存管理中的问题。 ERP有一句至理名言是：“进，出”，就是通过物料的进出进行有效的控制，高效地整合企业的资源，加快周转。例如不规范的MRP的应用就是这句话的最好注解：库存越来越高，无计划的物料短缺也越来越严重，生产也就不知道什">
+<meta name="keywords" content="珠海创诚易达信息科技有限公司, ERP, TMS, WMS, OMS, 物流软件, 物流系统, APP, 小程序">
+<meta property="og:type" content="article">
+<meta property="og:title" content="优化库存管理问题的经验分享">
+<meta property="og:url" content="http://www.eeda123.com/blog/eeda_inventory_tune/index.html">
+<meta property="og:site_name" content="创诚易达">
+<meta property="og:description" content="如何优化库存管理的问题？如果掌握不好，首先是影响销售；接着是影响进货,不利资金周转！创诚易达的小编告诉我们不仅仅要把着力点放在解决问题上，而忽略了一个关键点——如何查找导致库存管理中的问题。 ERP有一句至理名言是：“进，出”，就是通过物料的进出进行有效的控制，高效地整合企业的资源，加快周转。例如不规范的MRP的应用就是这句话的最好注解：库存越来越高，无计划的物料短缺也越来越严重，生产也就不知道什">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://www.eeda123.com/images/blog/2018-04-18/1.jpg">
+<meta property="og:image" content="http://www.eeda123.com/images/blog/2018-04-18/2.jpg">
+<meta property="og:updated_time" content="2018-04-18T07:42:42.297Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="优化库存管理问题的经验分享">
+<meta name="twitter:description" content="如何优化库存管理的问题？如果掌握不好，首先是影响销售；接着是影响进货,不利资金周转！创诚易达的小编告诉我们不仅仅要把着力点放在解决问题上，而忽略了一个关键点——如何查找导致库存管理中的问题。 ERP有一句至理名言是：“进，出”，就是通过物料的进出进行有效的控制，高效地整合企业的资源，加快周转。例如不规范的MRP的应用就是这句话的最好注解：库存越来越高，无计划的物料短缺也越来越严重，生产也就不知道什">
+<meta name="twitter:image" content="http://www.eeda123.com/images/blog/2018-04-18/1.jpg">
+
+  
+    <link rel="alternate" href="/atom.xml" title="创诚易达" type="application/atom+xml" />
+  
+
+  
+  <!--[if lte IE 10 ]><link rel="shortcut icon" href="/images/favicon.ico"><![endif]-->
+  <!--[if !IE]><!-->
+  <link rel="shortcut icon" href="/images/favicon.png">
+  <meta name="baidu-site-verification" content="CxIphFvq1I" />
+  <meta name="msapplication-TileImage" content="/images/favicon.png"/>
+  <meta name="msapplication-TileColor" content="#000000"/>
+
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-touch-icon-144x144.png" />
+
+  <link rel="icon" sizes="256x256" href="/images/favicon.png" />
+  <!--<![endif]-->
+  
+
+  
+  <!--<![endif]-->
+  <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+  <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="/css/vendors.css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+
+  <script src="/js/vendors.js"></script>
+
+  <script>
+    define('jquery', function () {
+      return window.jQuery;
+    });
+  </script>
+  
+
+</head>
+<body>
+
+  <div class="navbar-fixed">
+  <nav id="main-navbar" class="grey lighten-5 z-depth-0" role="navigation">
+    <div class="nav-wrapper container">
+
+      <a id="logo-container" href="/" class="brand-logo center-align">
+        <span>创诚易达</span>
+        <sub></sub>
+      </a>
+
+      <ul class="right hide-on-med-and-down">
+        
+          <li>
+            <a class="main-nav-link" href="/">首页</a>
+          </li>
+        
+          <li>
+            <a class="main-nav-link" href="/blog">新闻中心</a>
+          </li>
+        
+          <li>
+            <a class="main-nav-link" href="/about">关于我们</a>
+          </li>
+        
+      </ul>
+
+      <a href="#" data-activates="nav-mobile" class="button-collapse">
+        <i class="material-icons">menu</i>
+      </a>
+    </div>
+  </nav>
+</div>
+
+<ul id="nav-mobile" class="side-nav">
+  
+  <li>
+    <a class="main-nav-link" href="/">首页</a>
+  </li>
+  
+  <li>
+    <a class="main-nav-link" href="/blog">新闻中心</a>
+  </li>
+  
+  <li>
+    <a class="main-nav-link" href="/about">关于我们</a>
+  </li>
+  
+</ul>
+
+
+  <div id="main-container">
+    
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+
+
+      <article id="post-eeda_inventory_tune" class="article article-type-post" itemscope itemprop="blogPost">
+
+        <div class="article-inner">
+          
+
+          <header class="article-header">
+          
+              
+   
+    <h1 class="article-title header" itemprop="name">
+      优化库存管理问题的经验分享
+    </h1>
+  
+
+
+          
+
+            <div class="article-meta">
+              <i class="fa fa-calendar"></i>
+              <time datetime="2018-04-18T07:36:49.000Z" itemprop="datePublished">2018年04月18日</time>
+            </div>
+          </header>
+
+
+          <div class="article-entry " itemprop="articleBody">
+            
+              <p>如何优化库存管理的问题？如果掌握不好，首先是影响销售；接着是影响进货,不利资金周转！创诚易达的小编告诉我们不仅仅要把着力点放在解决问题上，而忽略了一个关键点——如何查找导致库存管理中的问题。</p>
+<p>ERP有一句至理名言是：“进，出”，就是通过物料的进出进行有效的控制，高效地整合企业的资源，加快周转。例如不规范的MRP的应用就是这句话的最好注解：库存越来越高，无计划的物料短缺也越来越严重，生产也就不知道什么时候就突然停线等等；这些问题将会形成恶性循环，不断地侵蚀着企业，增加企业的内耗。</p>
+<p>创诚易达的小编通过实际的库存控制项目运作，总结出了一套简洁有效的诊断企业库存管理问题的思路及方法。事实上，企业的库存问题只是企业各个问题的集中表象而已，其根源还是内部的管理问题，明白了库存管理问题的实质，接下来的诊断工作就比较清晰了。首先，要对企业摸清“家底”；其次，调研过程及诊断要有模块化；最后，学会总结分析，整理出重点问题。下面将由创诚易达的小编对这三方面进行详细阐述。</p>
+<p><img src="/images/blog/2018-04-18/1.jpg" alt="image"></p>
+<p>首先，摸清“家底”是库存诊断工作的第一步，也是打基础的一步，要做到各类库存的调研量化到位。将针对各类库存管理体系进行深入了解和分析，重点调研原材料、半成品及产成品的库存情况等问题。主要工作内容为调研诊断工作，包括：以往历史及目前在库的所有产品名称及数量？目前各库存产生的年份？是否已经成为“死库存”（无法进行流通的库存）？不可控制的库存有哪些？如：销售完成后的质保金等；隐形库存（无实物库存，却在资金账面上有所体现）有哪些？与库存相关的管理流程是否存在问题？包括采购、生产、销售各方面的流程，并注重非常规的流程调研，如产生隐形库存方面的流程等。</p>
+<p>其次，根据企业内部价值链，将调研过程及诊断模块化，可以从生产、供应、销售三大体系分别开展调研方面的工作。</p>
+<ol>
+<li><p>生产体系方面调研内容包括生产系统信息调研和在制品的调研。其中，生产系统信息的调研包括生产工艺、绘制产品结构图、调研生产提前期及订货提前期等方面信息的收集；在制品调研包括根据生产系统图调研各工序在制品数量、分析其波动性、调研各工序的生产产能等内容。</p>
+</li>
+<li><p>供应体系方面的调研内容包括当前库存情况？整体周转率及各类物料周转率的大小？是否有积压物料以及具体的明细等内容。</p>
+</li>
+<li><p>销售体系方面的调研与诊断工作包括当前的库存情况？客户的信息（包括产能、运输时间、当前库存量）等。</p>
+</li>
+</ol>
+<p><img src="/images/blog/2018-04-18/2.jpg" alt="image"></p>
+<p>最后，学会总结分析，整理出重点问题，此过程可以运用二•八原则，使用帕累托图找出其中的重点问题，抓大头进行改善。</p>
+<ol>
+<li><p>对生产过程中的半成品进行细分：各工序的半成品是否一致？不一致的原因？</p>
+</li>
+<li><p>对原料库存类别进行细分：死库存原因、隐形库存的原因、正常库存的周转率，是否过低？能否降低？降低的点及数量在哪？</p>
+</li>
+<li><p>对产成品库存进行细分：死库存原因、隐形库存的原因、已提未售的细分情况，包括：是否合理？违规情况？质保金等原因、正常库存的周转率，是否过低？能否降低？降低的点及数量在哪？</p>
+</li>
+</ol>
+<p>通过系统化的调研与访谈，进一步深入了解原材料、半成品及产成品的库存情况，并对各类信息采集及传递、生产工艺流程特点、相关部门及岗位的职责、业务流程、绩效考核、财务指标控制等方面多维度地进行分析与评估，找到引起各类库存过高问题的症结，分类归纳问题点，为制定方案提供依据。</p>
+
+            
+          </div>
+
+          
+
+          <footer class="article-footer">
+            <!--a data-url="http://www.eeda123.com/blog/eeda_inventory_tune/" data-id="cjg4sjej30000cgj9jfgk3klj" class="article-share-link">Share</a-->
+            
+            
+          </footer>
+
+        </div>
+
+        
+          
+<nav id="article-nav" class="white">
+  <div class="nav-wrapper">
+    <ul class="row">
+    
+
+    
+      <li class="col s6">
+        <a href="/blog/eeda_new_rule/" id="article-nav-older" class="article-nav-link-wrap grey-text text-darken-1 right-align truncate">
+          <span class="article-nav-title">5月1日正式实施--营运载货汽车安全技术标准发布</span>
+          <i class="fa fa-arrow-right"></i>
+        </a>
+      </li>
+    
+
+    </ul>
+  </div>
+</nav>
+
+
+        
+      </article>
+
+
+      
+
+
+
+    </div>
+  </div>
+</div>
+
+
+  
+
+
+
+  </div>
+
+  <footer class="page-footer grey darken-2">
+    <div class="footer-copyright">
+      <div class="container">
+          <p>珠海公司：珠海市中珠水晶堡商业广场622号 <span style="margin-left: 140px;">咨询电话：0756-2160009</span></p>
+          <p>深圳公司：深圳市罗湖区清水河一路北腾邦大厦A座4楼118  <span style="margin-left: 30px;"></span>咨询电话：0755-82339386</span></p>
+        &copy; 2013 - 2018 珠海创诚易达信息科技有限公司
+
+        <div class="right">
+          <a href="http://www.miitbeian.gov.cn/" rel="nofollow" class="white-text" target="_blank">粤ICP备13063121号</a>
+          <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_5655076'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D5655076%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/app.js"></script>
+
+</body>
+</html>
